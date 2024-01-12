@@ -40,10 +40,11 @@ public class RegisterTests {
     @DisplayName("Регистрация пользователя с невалидным паролем")
     @Description("Ошибка при вводе пароля меньше 6 символов")
     public void registerPasswordErrorTest() {
+        Faker faker = new Faker();
         registerPage = new RegisterPage(webDriver);
         webDriver.get("https://stellarburgers.nomoreparties.site/login");
         registerPage.goToRegistrPage();
-        registerPage.registerUser("Анна", "annaponomareva@mail.ru", "1234");
+        registerPage.registerUser(faker.name().name(), faker.internet().emailAddress(), faker.letterify("????"));
         Assert.assertEquals(true, registerPage.isPasswordErrorVisible());
     }
 

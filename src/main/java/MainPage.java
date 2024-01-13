@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 public class MainPage {
     private final By bunsButton = By.xpath(".//span[text()='Булки']");
     private final By saucesButton = By.xpath(".//span[text()='Соусы']") ;
-    private final By fillingsButton = By.xpath("/html/body/div/div/main/section[1]/div[1]/div[3]");
+    private final By fillingsButton = By.xpath(".//span[text()='Начинки']");
     private WebDriver webDriver;
 
     public MainPage(WebDriver webDriver) {

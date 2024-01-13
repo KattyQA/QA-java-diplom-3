@@ -16,10 +16,7 @@ public class MainPageTests {
         options.addArguments("--remote-allow-origins=*");
         webDriver = new ChromeDriver(options);
         webDriver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
-
     }
-
-
     @After
     public void teardown() {
         webDriver.quit();

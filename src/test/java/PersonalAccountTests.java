@@ -57,7 +57,6 @@ public class PersonalAccountTests {
         personalAccountPage.LoggedIn(email, password);
         personalAccountPage.goToPersonalAccount();
         Assert.assertEquals(true, personalAccountPage.isOrderHistoryIsVisible());
-
     }
 
     @Test
@@ -77,7 +76,6 @@ public class PersonalAccountTests {
         personalAccountPage.goToPersonalAccount();
         personalAccountPage.goToConstructor();
         Assert.assertEquals(true, personalAccountPage.isMainPageTitleIsVisible());
-
     }
 
     @Test
@@ -97,7 +95,6 @@ public class PersonalAccountTests {
         personalAccountPage.goToPersonalAccount();
         personalAccountPage.goToConstuctorThrowLogo();
         Assert.assertEquals(true, personalAccountPage.isMainPageTitleIsVisible());
-
     }
 
     @Test
@@ -117,7 +114,6 @@ public class PersonalAccountTests {
         personalAccountPage.goToPersonalAccount();
         personalAccountPage.logout();
         Assert.assertEquals(true, personalAccountPage.isTitleEnterVisible());
-
     }
 
     @After

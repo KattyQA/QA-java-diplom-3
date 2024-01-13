@@ -32,7 +32,6 @@ public class LoginTests {
         loginPage.goToLoginPage();
         loginPage.LoggedIn("annaponomareva@mail.ru", "123456");
         Assert.assertEquals(true, loginPage.isMainPageTitleIsVisible());
-
     }
 
     @Test
@@ -44,7 +43,6 @@ public class LoginTests {
         loginPage.goToPersonalAccount();
         loginPage.LoggedIn("annaponomareva@mail.ru", "123456");
         Assert.assertEquals(true, loginPage.isMainPageTitleIsVisible());
-
     }
 
     @Test
@@ -58,7 +56,6 @@ public class LoginTests {
         loginPage.goToLoginPageFromRegistrRestorePasswordPage();
         loginPage.LoggedIn("annaponomareva@mail.ru", "123456");
         Assert.assertEquals(true, loginPage.isMainPageTitleIsVisible());
-
     }
 
     @Test
@@ -72,13 +69,10 @@ public class LoginTests {
         loginPage.goToLoginPageFromRegistrRestorePasswordPage();
         loginPage.LoggedIn("annaponomareva@mail.ru", "123456");
         Assert.assertEquals(true, loginPage.isMainPageTitleIsVisible());
-
     }
 
     @After
     public void teardown() {
         webDriver.quit();
     }
-
-
 }

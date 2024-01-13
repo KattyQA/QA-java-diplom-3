@@ -35,7 +35,6 @@ public class LoginPage {
         webDriver.findElement(emailField).sendKeys(email);
         webDriver.findElement(passwordField).sendKeys(password);
         webDriver.findElement(enterBottom).click();
-
     }
 
     @Step("Переход в личный кабинет")

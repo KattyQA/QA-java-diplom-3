@@ -13,9 +13,9 @@ import java.util.concurrent.TimeUnit;
 
 public class ConstructorTests {
 
-    private final By bunsButton = By.xpath("/html/body/div/div/main/section[1]/div[1]/div[1]");
-    private final By saucesButton = By.xpath("/html/body/div/div/main/section[1]/div[1]/div[2]");
-    private final By fillingsButton = By.xpath("/html/body/div/div/main/section[1]/div[1]/div[3]");
+    private final By bunsButton = By.xpath(".//span[text()='Булки']");
+    private final By saucesButton = By.xpath(".//span[text()='Соусы']");
+    private final By fillingsButton = By.xpath(".//span[text()='Начинки']");
     private final String expectedState = "tab_tab__1SPyG tab_tab_type_current__2BEPc pt-4 pr-10 pb-4 pl-10 noselect";
     private WebDriver webDriver;
     private MainPage mainPage;
